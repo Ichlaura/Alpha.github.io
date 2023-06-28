@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura | Home</title>
+    <link rel="stylesheet" href="Styles/about.css">
+</head>
+  <body>
+    <header>
+      <a id="logo_link" href="index.html">
+        <img class="logo" src="images/logo1.png" alt="Logo">
+    </a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html"> About us</a>
+          <a href="trips.html"> Trips</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+   
+
+
+    <main>
+        <div id="feedback"></div>
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+                <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" />
+                </li>
+                <li>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_email" />
+                </li>
+                <li>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Send your message</button>
+                </li>
+            </ul>
+        </form>
+  
+
+
+    <script>
+        // Obtén el elemento div de retroalimentación para que podamos hacer algo con él.
+        const feedbackElement = document.getElementById('feedback');
+        // Obtén el formulario para poder leer lo que se ha ingresado en él.
+        const formElement = document.forms[0];
+        // Agrega un 'listener' para esperar el envío de nuestro formulario. Cuando eso ocurra, ejecuta el siguiente código.
+        formElement.addEventListener('submit', function(e) {
+            // Detén la acción predeterminada del formulario.
+            e.preventDefault();
+            // establece el mensaje
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // Haz que el elemento de retroalimentación sea visible.
+            feedbackElement.style.display = "block";
+            // Agrega una clase para desplazar todo hacia abajo para que nuestro mensaje no lo cubra.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+
+  </main>
+</body>
+    <footer>
+      <p> Laura Nuñez &copy; 2023 - Laura Nunez</p>
+      <p><a href="Index.html">Home</a></p>
+      <p><a href="contact.html">Contact me</a></p>
+      <div class="sociallinks">
+          <a href="https://www.facebook.com/Laura.P.Nuez/" target="_blank">
+              <img src="images/facebook.png" alt="fb icon">
+          </a>
+          <a href="https://twitter.com" target="_blank">
+              <img src="images/instagram.png" alt="twitter icon">
+          </a>
+          <a href="https://instagram.com" target="_blank">
+              <img src="images/instagram.png" alt="instagram icon">
+          </a>
+      </div>
+  </footer>
+
+</html>

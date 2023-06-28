@@ -1,0 +1,191 @@
+
+body {
+    background-color: #b4adea;
+    width: 1600px;
+    font-family: "Open Sans", sans-serif;
+    padding: 5px 25px;
+    font-size: 18px;
+    margin: 0;
+    color: #444444;
+    margin: 0 auto;
+  }
+  
+  .boat {
+    height: 1000px;
+    width: 1580px;
+  }
+  
+  .Title{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #b4adea;
+    font-size: 50px;
+    border: solid #6EFAFB 2px;
+    margin-top: 10px;
+  }
+  
+  .oars {
+    height: 1000px;
+    width: 1580px;
+  }
+  
+  .rapids{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #b4adea;
+    font-size: 40px;
+  }
+  
+
+  
+  .msg {
+    color: black;
+    background-color: #b4adea;
+    text-align: center;
+    margin: 0;
+  }
+  
+  
+  #background {
+    height: 725px;
+    color: #f3eded;
+  }
+  
+  #hero-msg h1 {
+    text-align: center;
+  }
+  
+  #hero-msg h4 {
+    text-align: center;
+  }
+  
+  .button-box {
+    text-align: center;
+  }
+  
+  main section {
+    text-align: center;
+  }
+  
+  .header {
+    overflow: hidden;
+    background-color: #50514F;
+    padding: 5px 10px;
+    font-family: "Bodoni MT";
+  }
+  
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 45px;
+    border-radius: 4px;
+  }
+  
+  .header a.logo {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  
+  .header a:hover {
+    background-color: #E7DFDD;
+    color: black;
+  }
+  
+  .header a.active {
+    background-color: black;
+    color: rgb(178, 194, 231);
+  }
+  
+  .header-right {
+    float: right;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .header-right {
+      float: none;
+    }
+  }
+  
+  .logo image{
+    padding-top: 15px;
+      -webkit-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+      height: 100px;
+  }
+  
+  .msg{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  #social-wrapper {
+      text-align: center;
+  }
+  
+  .site-footer {
+    background-color: #b4adea;
+      text-align: center;
+      margin: 10px 0;
+    padding: 25px 50px;
+    margin-top: 200px;
+  }
+  
+  /*Social Media Icons*/
+  .social-wrapper {
+      text-align: center;
+    padding-top: 15px;
+  }
+  
+  .social-wrapper ul li {
+      display: inline;
+      margin: 0 5px;
+  }
+  
+  .twitter-icon,
+  .facebook-icon,
+  .instagram-icon,
+  .linkedin-icon,
+  .googleplus-icon,
+  .youtube-icon,
+  .foursquare-icon{
+      margin-top: .625em;
+      width: 40px;
+      height: 40px;
+      opacity: .6;
+      filter: alpha(opacity=60); /* For IE8 and earlier */
+    border-radius: 25px;
+  }
+  
+  .twitter-icon:hover,
+  .facebook-icon:hover,
+  .instagram-icon:hover,
+  .linkedin-icon:hover,
+  .googleplus-icon:hover,
+  .youtube-icon:hover,
+  .foursquare-icon:hover {
+      opacity: 1.0;
+      filter: alpha(opacity=100); /* For IE8 and earlier */
+  }
+  
+  .footer-nav p {
+      text-align: center;
+  }
+  
+  .join {
+      background-color: #6EFAFB;
+      color: black;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 15px 30px;
+      margin-top: 50px;
+      border-radius: 5px;
+  }
